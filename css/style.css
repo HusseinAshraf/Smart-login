@@ -1,0 +1,215 @@
+:root{
+    --main-font:'Courier New', Courier, monospace;
+    --main-color:linear-gradient(-225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%);
+    --second-color:#7D1173;
+
+}
+nav .logo{
+    text-transform: uppercase;
+    background-image: var(--main-color);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #645193;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: #231557;
+    font-weight: bold;
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.5s;
+    letter-spacing: 4px;
+    color: #6534d9;
+    text-align: center;
+    
+}
+a:hover{
+    text-transform: uppercase;
+    background-image: var(--main-color);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--main-color),
+        1px 1px 2px var(--main-color),
+        1px 1px 2px var(--main-color),
+        1px 1px 2px var(--main-color);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+
+@keyframes btnAnimA {
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    animation: btnAnimA 1500ms linear infinite;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+
+@keyframes btnAnimB {
+    0% {
+        top: -100%
+    }
+
+    50% {
+        top: 100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--main-color);
+    animation: btnAnimB 1500ms linear infinite;
+    animation-delay: 300ms;
+}
+
+
+@keyframes btnAnimC {
+    0% {
+        right: -100%;
+    }
+
+    50% {
+        right: 100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    animation: btnAnimC 1500ms linear infinite;
+    animation-delay: 600ms;
+}
+
+
+@keyframes btnAnimD {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: var(--main-color);
+    animation: btnAnimD 1500ms linear infinite;
+    animation-delay: 900ms;
+}
+
+.icon-f,
+.icon-g,
+.icon-t
+
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--second-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--second-color);
+    transition: all 0.5s;
+}
+.icon-f:hover{
+    background-color: #1077ee;
+    border: 2px solid #1077ee;
+    color: white;
+    cursor: pointer;
+}
+.icon-g:hover{
+    background-color: #fe0201;
+    border: 2px solid #fe0201;
+    color: white;
+    cursor: pointer;
+}
+.icon-t:hover{
+    background-color: #229af0;
+    border: 2px solid #229af0;
+    color: white;
+    cursor: pointer;
+}
